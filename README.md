@@ -162,7 +162,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Contact  
 For questions or feedback, feel free to reach out:  
 
-**Vishwa Vijith**: vishwavijith@example.com  
+**Vishwa Vijith**: VishwaVijith@outlook.com  
 **GitHub**: [VishwaVijith](https://github.com/VishwaVijith)  
 
 
