@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Pencil</title>
+    <link rel="stylesheet" href="../styles/display-note.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+            fill="#FFFFFF">
+            <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+        </svg>
+        <h1 class="page-pencil">Page Pencil</h1>
+        <!-- <img src="images/menu-icon.png" alt="Menu" class="menu-icon" /> -->
+    </header>
+
+    <section class="notes-container">
+        <div class="note-item">
+            <div class="note-header">
+                <div class="tag-container"></div>
+
+                <span class="favorite-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
+                        fill="#FFD700">
+                        <path d="M12 17.75l-3.5 2.25 1-4.25-3.5-3.25 4.5-.5 1.5-4.5 1.5 4.5 4.5 .5-3.5 3.25 1 4.25z" />
+                    </svg>
+                </span>
+            </div>
+
+            <div class="note-content">
+                <p class="text-note"></p>
+            </div>
+
+            <div class="visual-note">
+            </div>
+        </div>
+    </section>
+
+    <div class="action-buttons">
+        <button class="edit-button">Edit Note</button>
+        <button class="delete-button">Delete Note</button>
+    </div>
+
+    <script src="../scripts/display-note/display-note.js"></script>
+</body>
+
+</html>

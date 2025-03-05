@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Pencil</title>
+    <link rel="stylesheet" href="../styles/add-note.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="page-pencil-add-note-page">
+    <header class="page-pencil-header">
+        <svg class="page-pencil-back-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" fill="#FFFFFF">
+            <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+        </svg>
+        <h1 class="page-pencil-title">Page Pencil</h1>
+        <!-- <img src="images/menu-icon.png" alt="Menu" class="page-pencil-menu-icon" /> -->
+    </header>
+
+    <section class="add-note-container">
+        <div class="tag-input-section">
+            <input type="text" class="tag-editor" placeholder="Add a tag (Min 1 Max 5) and press Enter" />
+            <div class="tag-container">
+            </div>
+        </div>
+
+        <textarea class="text-note-input" id="text-note-input" placeholder="Write your note here..."></textarea>
+
+        <div class="image-upload-container">
+            <input type="file" id="page-pencil-image-upload" accept="image/*" />
+            <label for="page-pencil-image-upload" class="drop-zone">Drag & Drop or Click to Upload Image</label>
+            <div id="image-preview-container"></div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="page-pencil-cancel-button" id="page-pencil-cancel-button">Cancel</button>
+            <button class="star-button">
+                <span class="star-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px"
+                        fill="#0c130e">
+                        <path d="M12 17.75l-3.5 2.25 1-4.25-3.5-3.25 4.5-.5 1.5-4.5 1.5 4.5 4.5 .5-3.5 3.25 1 4.25z" />
+                    </svg>
+                </span> Favorite
+            </button>
+            <button class="save-button" id="page-pencil-save-note-button">Save Note</button>
+        </div>
+    </section> 
+
+    <script type="module" src="../scripts/add-note/addNote-event-handler.js"></script>
+</body>
+
+</html>

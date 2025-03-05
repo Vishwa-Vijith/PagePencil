@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "Page Pencil",
+  "version": "1.0",
+  "description": "A versatile note-taking tool with multimedia support.",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "/icons/icon16.png",
+      "48": "/icons/icon48.png"
+    },
+    "default_title": "Take Note"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "clipboardWrite",
+    "unlimitedStorage"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "popup/search.html",
+        "shared-scripts/html/add-note.html",
+        "shared-scripts/html/display-note.html"
+      ],
+      "matches": ["*://*/*"],
+      "extension_ids": []
+    }
+  ],
+  "background": {
+    "service_worker": "service-worker/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "content-script/content.js",
+        "shared-scripts/scripts/add-note/addNote-event-handler.js"
+      ],
+      "css": ["content-script/styles/content.css"]
+    }
+  ],
+
+  "host_permissions": ["<all_urls>"],
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+
+  "icons": {
+    "16": "/icons/icon16.png",
+    "48": "/icons/icon48.png",
+    "128": "/icons/icon128.png"
+  }
+}

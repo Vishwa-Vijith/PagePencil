@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Pencil</title>
+    <link rel="stylesheet" href="./styles/popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="page-pencil">Page Pencil</h1>
+        <!-- <img src="images/menu-icon.png" alt="Menu" class="menu-icon" /> -->
+    </header>
+
+    <nav class="nav-buttons">
+        <ul>
+            <li>
+                <a href="../shared-scripts/html/add-note.html" class="icon-text-button" style="width: 120px; margin-left: 35px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000000">
+                        <path
+                            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v268q-19-9-39-15.5t-41-9.5v-243H200v560h242q3 22 9.5 42t15.5 38H200Zm0-120v40-560 243-3 280Zm80-40h163q3-21 9.5-41t14.5-39H280v80Zm0-160h244q32-30 71.5-50t84.5-27v-3H280v80Zm0-160h400v-80H280v80ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Zm-20-80h40v-100h100v-40H740v-100h-40v100H600v40h100v100Z" />
+                    </svg>
+                    Add Note
+                </a>
+            </li>
+            <li>
+                <a href="search.html" class="icon-text-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#000000">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                    Search
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="notes-section">
+        <nav class="notes-nav">
+            <ul>
+                <li class="nav-item active" id="pages-note-tab">Page's Note</li>
+                <li class="nav-item" id="favourite-note-tab">Favourite Note</li>
+            </ul>
+        </nav>
+        <div class="notes-list-container" id="notes-list">
+            <ul>
+                <li class="note-item">
+                    <span class="note-content">
+                        No notes found for this page. Start adding your notes!
+                    </span>
+                    <span class="show-note-dropdown-icon" id="show-note-dropdown-icon"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path d="M480-360 280-560h400L480-360Z" />
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./scripts/popup.js"></script>
+
+</body>
+
+</html>

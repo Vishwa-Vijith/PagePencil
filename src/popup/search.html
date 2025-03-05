@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Pencil</title>
+    <link rel="stylesheet" href="./styles/search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+            fill="#FFFFFF">
+            <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+        </svg>
+        <h1 class="page-pencil">Page Pencil</h1>
+        <!-- <img src="images/menu-icon.png" alt="Menu" class="menu-icon" /> -->
+    </header>
+
+    <form class="search-bar-container">
+        <div class="search-bar">
+            <span class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#000000">
+                    <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                </svg>
+            </span>
+            <input type="text" class="search-input" placeholder="Search the note..." name="searchQuery" />
+        </div>
+    </form>
+
+    <div class="filter-section">
+        <div class="tag-filters">
+            <div class="tag-bubble">
+                <input type="button" value="Favourite" class="tag-input" name="isFavourite"
+                    form="search-bar-container" />
+                <button class="cancel-filter" type="button">x</button>
+            </div>
+
+            <div class="tag-bubble">
+                <input type="button" value="Tags" class="tag-input favourite" id="search-tags" name="tags"
+                    form="search-bar-container" />
+                <button class="cancel-filter" type="button">x</button>
+            </div>
+
+            <div class="tag-bubble">
+                <input type="button" value="URL" class="tag-input" id="search-url" name="url"
+                    form="search-bar-container" />
+                <button class="cancel-filter" type="button">x</button>
+            </div>
+
+            <div class="tag-bubble">
+                <input type="button" value="My-Note" class="tag-input" id="search-myNote" name="myNote"
+                    form="search-bar-container" required />
+                <button class="cancel-filter" type="button">x</button>
+            </div>
+        </div>
+
+        <div class="filter-buttons">
+            <button type="reset" class="reset-button">Reset</button>
+            <button type="submit" class="submit-button">Search</button>
+        </div>
+    </div>
+
+    <section class="notes-section">
+        <div class="notes-list-container" id="notes-list">
+            <ul>
+                <li class="note-item">
+                    <span class="note-content">
+                        Try using filters for accurate results
+                    </span>
+                    <span class="show-note-dropdown-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                            <path d="M480-360 280-560h400L480-360Z" />
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="./scripts/search-note.js"></script>
+</body>
+
+</html>
