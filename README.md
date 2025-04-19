@@ -1,4 +1,12 @@
-# Page Pencil - Chrome Extension
+# 📝 Page Pencil – Chrome Extension
+
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Chrome Extension](https://img.shields.io/badge/Chrome%20Extension-MV3-4285F4?style=flat&logo=google-chrome&logoColor=white)
+![Manifest V3](https://img.shields.io/badge/Manifest-V3-5F6368?style=flat&logo=google-chrome&logoColor=white)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=flat&logo=webpack&logoColor=black)
+![IndexedDB](https://img.shields.io/badge/IndexedDB-4479A1?style=flat&logo=database&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat)
+![Build](https://img.shields.io/badge/Build-NPM%20Run%20Build-blue?style=flat&logo=npm&logoColor=white)
 
 **Page Pencil** is a versatile note-taking tool with multimedia support, designed to help users take notes, highlight text, and organize information directly within their browser.
 
@@ -149,6 +157,8 @@ Go to the original repository and click **New Pull Request**.
 ---
 
 ## License
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=flat)
+
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
